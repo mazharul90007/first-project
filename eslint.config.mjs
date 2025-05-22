@@ -35,11 +35,14 @@ export default [
       'prettier/prettier': 'error',
 
       // Your custom rules
-      'no-unused-vars': 'error',
       'no-unused-expressions': 'error',
       'prefer-const': 'error',
       'no-console': 'warn',
       'no-undef': 'error',
+      'no-unused-vars': [
+        'error',
+        { argsIgnorePattern: '^_', varsIgnorePattern: '^_', args: 'none' },
+      ],
     },
   },
 
