@@ -81,7 +81,7 @@ const studentJoiSchema = Joi.object({
     'string.email': 'Email is not valid',
   }),
   contactNo: Joi.string().required().messages({
-    'any.required': 'Contact Number is required',
+    'any.required': 'Contact No. is required',
   }),
   emergencyContactNo: Joi.string().required().messages({
     'any.required': 'Emergency Contact Number is required',
