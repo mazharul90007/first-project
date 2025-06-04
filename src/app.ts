@@ -11,7 +11,7 @@ const app: Application = express();
 app.use(express.json());
 app.use(cors());
 
-//application routes
+//application routes api
 // app.use('/api/v1/students', StudentRoutes);
 app.use('/api/v1/users', UserRoutes);
 
